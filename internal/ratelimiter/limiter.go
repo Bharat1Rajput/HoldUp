@@ -40,3 +40,24 @@ func NewLimiter(capacity int, refillRate float64) *Limiter {
 		lastRefill: now,
 	}
 }
+
+// Capacity returns the maximum token capacity.
+func (l *Limiter) Capacity() int {
+	l.mutex.Lock()
+	defer l.mutex.Unlock()
+	return l.capacity
+}
+
+// Tokens returns the current available tokens.
+func (l *Limiter) Tokens() float64 {
+	l.mutex.Lock()
+	defer l.mutex.Unlock()
+	return l.tokens
+}
+
+// RefillRate returns the refill rate per second.
+func (l *Limiter) RefillRate() float64 {
+	l.mutex.Lock()
+	defer l.mutex.Unlock()
+	return l.refillRate
+}
