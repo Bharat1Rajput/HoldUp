@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Bharat1Rajput/HoldUp/internal/ratelimiter"
+	"github.com/Bharat1Rajput/HoldUp/ratelimiter"
 )
 
 // rate limiting to HTTP handlers.

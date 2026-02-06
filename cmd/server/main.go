@@ -11,8 +11,8 @@ import (
 
 	"github.com/Bharat1Rajput/HoldUp/internal/config"
 	"github.com/Bharat1Rajput/HoldUp/internal/handlers"
-	"github.com/Bharat1Rajput/HoldUp/internal/middleware"
-	"github.com/Bharat1Rajput/HoldUp/internal/ratelimiter"
+	"github.com/Bharat1Rajput/HoldUp/middleware"
+	"github.com/Bharat1Rajput/HoldUp/ratelimiter"
 )
 
 func main() {

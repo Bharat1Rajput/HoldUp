@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/Bharat1Rajput/HoldUp/internal/ratelimiter"
+	"github.com/Bharat1Rajput/HoldUp/ratelimiter"
 )
 
 func testHandler(w http.ResponseWriter, r *http.Request) {
